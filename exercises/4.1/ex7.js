@@ -1,4 +1,4 @@
-var porcentagem = 56;
+let porcentagem = 56;
 
 if ( porcentagem < 0 || porcentagem > 100 ) {
     console.log("Erro! Porcentagem fora dos limítes!")

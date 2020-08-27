@@ -1,6 +1,6 @@
-var a = 2;
-var b = 4;
-var c = 6;
+let a = 2;
+let b = 4;
+let c = 6;
 
 thereIsAOdd = a % 2 == 1 || b % 2 == 1 || c % 2 == 1;
 

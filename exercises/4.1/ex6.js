@@ -1,5 +1,5 @@
-var peca = "Peão";
-var movimento = "";
+let peca = "Peão";
+let movimento = "";
 peca = peca.toLowerCase();
 switch (peca) {
   case "peão":
