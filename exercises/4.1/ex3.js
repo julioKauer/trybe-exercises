@@ -1,7 +1,6 @@
-
-a = 10;
-b = 2;
-c = 6;
+var a = 10;
+var b = 2;
+var c = 6;
 if ( a > b && a > c ) {
     console.log( a );    
 } else if ( b > a && b > c ) {
