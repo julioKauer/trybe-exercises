@@ -32,6 +32,9 @@ window.onload = function () {
     complainMessage();
   });
 
-  let buttonScream = document.querySelector("#whatHappining");
-  buttonScream.addEventListener("click",typeAndScream);
+  let buttonWhat = document.querySelector("#whatHappining");
+  buttonWhat.addEventListener("click",finishTheStory)
+
+  let textName = document.querySelector("#name");
+  textName.addEventListener("input",typeAndScream);
 };
