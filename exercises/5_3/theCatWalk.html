@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+  </head>
+  <body>
+    <img
+      style="position: absolute"
+      src="http://www.anniemation.com/clip_art/images/cat-walk.gif"
+    />
+  </body>
+  <script>
+    let image = document.querySelector("img");
+    image.style.marginLeft = "0px";
+    image.style.marginTop = "0px";
+
+    function catWalk() {
+      image.style.marginLeft = `${parseInt(image.style.marginLeft)+3}px`;
+    //   image.style.marginTop = `${parseInt(image.style.marginTop)+1}px`;
+      if (parseInt(image.style.marginLeft) > window.innerWidth) {
+       image.style.marginLeft = "0px";          
+    //    image.style.marginTop = "0px";          
+      }
+    }
+    let myTimer = setInterval(catWalk,50);
+    </script>
+</html>
