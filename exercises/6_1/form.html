@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="name"
+          >Nome:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required="required"
+            size="40"
+            maxlength="40"
+          />
+        </label>
+        <label for="email"
+          >email:
+          <input type="email" name="email" id="email" required="required" />
+        </label>
+        <!-- https://aurelio.net/regex/html5/pattern.html -->
+        <!-- pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" -->
+        <label for="cpf"
+          >cpf:
+          <input
+            type="number"
+            name="cpf"
+            id="cpf"
+            required="required"
+            size="11"
+            maxlength="11"
+          />
+        </label>
+        <label for="address"
+          >Endereço:
+          <input
+            type="text"
+            name="address"
+            id="address"
+            required="required"
+            maxlength="200"
+          />
+        </label>
+        <label for="city"
+          >Cidade:
+          <input
+            type="text"
+            name="city"
+            id="city"
+            required="required"
+            maxlength="28"
+          />
+        </label>
+        <label for="state"
+          >Estado:
+          <select name="state" id="state" required="required"></select>
+        </label>
+        <label for="home">
+          <input type="radio" name="home" value="home" id="home" />
+          Casa
+        </label>
+        <label for="apartment">
+          <input type="radio" name="home" value="apartment" id="apartment" />
+          Apartamento
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Dados do seu último emprego
+        </legend>
+        <label for="summary">
+          <textarea name="summary" id="summary" cols="30" rows="10" required="required"></textarea>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
