@@ -102,7 +102,7 @@ new window.JustValidate('.js-form', {
   },
   messages: {
     name: {
-      minLength: 'escreve ds fdsag gdaaaaaa s',
+      minLength: 'Mínimo 3 letras.',
     },
   },
   focusWrongField: true,
