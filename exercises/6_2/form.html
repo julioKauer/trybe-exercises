@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bulma.min.css" />
+    <link rel="stylesheet" href="DatePickerX.min.css" />
+    <link rel="stylesheet" href="justValidateTooltip.min.css">
     <link rel="stylesheet" href="style.css" />
+    <script src="DatePickerX.min.js"></script>
+    <script src="just-validate.min.js"></script>
     <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <section class="section">
-      <form action="">
+    <form class="js-form" id="form" action="">
+      <section class="section">
         <div class="field">
           <label for="name">Nome:</label>
           <div class="control">
@@ -18,13 +22,11 @@
               class="input"
               type="text"
               name="name"
-              iput
-              type="text"
-              name="name"
               id="name"
               required="required"
               size="40"
               maxlength="40"
+              data-validate-field="name"
             />
           </div>
         </div>
@@ -38,6 +40,7 @@
               name="email"
               id="email"
               required="required"
+              data-validate-field="email"
             />
           </div>
         </div>
@@ -113,21 +116,65 @@
             </label>
           </div>
         </div>
-
+      </section>
+      <section class="section">
         <div class="field">
-          <div class="control"></div>
+          <label for="summary">Resumo do currículo</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              name="summary"
+              id="summary"
+              maxlength="1000"
+              required="required"
+            ></textarea>
+          </div>
         </div>
-        <legend>Dados do seu último emprego</legend>
-        <label for="summary">
-          <textarea
-            name="summary"
-            id="summary"
-            cols="30"
-            rows="10"
-            required="required"
-          ></textarea>
-        </label>
-      </form>
-    </section>
+        <div class="field">
+          <label for="position">Cargo</label>
+          <div class="control">
+            <input
+              class="input"
+              id="position"
+              name="position"
+              type="text"
+              maxlength="40"
+              required="required"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label for="position-description">Descrição do cargo</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              name="position-description"
+              id="position-description"
+              maxlength="500"
+              required="required"
+            ></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label for="start-date">Data de início</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="start-date"
+              id="start-date"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button
+              class="button is-success form__btn btn btn-primary"
+              id="send"
+            >Enviar</button>
+          </div>
+        </div>
+      </section>
+    </form>
   </body>
 </html>

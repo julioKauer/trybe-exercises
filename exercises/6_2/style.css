@@ -2,3 +2,20 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.date-picker-x {
+  background-color: white;
+  border: solid 1px #dbdbdb;
+  color: #4a4a4a;
+  border-radius: 6px;
+}
+
+.date-picker-x.to-top::before {
+  border-color: transparent;
+}
+
+.date-picker-x .dpx-weekend {
+  color: #4a4a4a;
+  font-weight:550;
+	color: #803d4a;
+}
