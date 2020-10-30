@@ -4,7 +4,8 @@
   "description": "",
   "main": "sum.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    // "test": "jest --watch" espera mudanças e realiza teste automático
   },
   "devDependencies": {
     "jest": "^26.6.1"
