@@ -62,7 +62,7 @@ class App extends Component {
 
     switch(fieldName) {
       case 'email':
-        const isValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2})$/i)
+        const isValid = value.match(/^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+)@([A-Z0-9.-]+\.)+([\w]{2,})$/i)
         return isValid ? '' : ' is invalid';
       default:
         break;
