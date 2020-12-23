@@ -1,0 +1,11 @@
+{
+  "name": "pure-function",
+  "private": true,
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "jest": "^18.1.0",
+    "react": "^17.0.1"
+  }
+}
